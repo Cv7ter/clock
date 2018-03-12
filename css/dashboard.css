@@ -1,0 +1,117 @@
+*	{
+	font-family: Tw Cen MT;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+}
+
+.grid 	{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"title"
+	"one"
+	"two"
+	"three"
+	"four";
+}
+
+.title 	{
+	grid-area: title;
+	
+}
+
+.logo 	{
+	width: 60%;
+	margin: 3%;
+}
+
+.one 	{
+	grid-area: one;
+	font-size: 20px;
+}
+
+.two 	{
+	grid-area: two;
+	font-size: 20px;
+}
+
+.three 	{
+	grid-area: three;
+	font-size: 20px;
+}
+
+.four 	{
+	grid-area: four;
+	font-size: 20px;
+}
+
+.one, .two, .three, .four	{
+	margin: 5%;
+}
+
+#myChart	{
+	width: 35%;
+	margin: 0 5% 5% 0;
+}
+	
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 719px) {
+	
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+	.grid 	{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"title title"
+	"one two"
+	"three four";
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.grid 	{
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	grid-template-areas:
+	"title title title title"
+	". one two ."
+	". three four .";
+	}
+	
+	.one 	{
+	grid-area: one;
+	font-size: 30px;
+	}
+
+	.two 	{
+		grid-area: two;
+		font-size: 30px;
+	}
+
+	.three 	{
+		grid-area: three;
+		font-size: 30px;
+	}
+
+	.four 	{
+		grid-area: four;
+		font-size: 30px;
+	}
+	
+}
